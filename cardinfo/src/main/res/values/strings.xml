@@ -7,4 +7,12 @@
     <string name="luhn">LUHN</string>
     <string name="card_number">Card Number</string>
     <string name="country">Country</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="lat_lng">(latitude: %s, longitude: %s)</string>
+    <string name="name_city">(%s, %s)</string>
+    <string name="emoji_country">%s %s</string>
+
 </resources>
