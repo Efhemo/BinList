@@ -1,2 +1,8 @@
 rootProject.name = "BinList"
-include (":app")
+include (
+    ":app",
+    ":libraries:remote",
+    ":libraries:domain",
+    ":core",
+    ":cardinfo"
+)

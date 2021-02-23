@@ -2,6 +2,10 @@ import Dependencies.AndroidX
 import Dependencies.DI
 import Dependencies.Network
 import Dependencies.View
+import ProjectLib.core
+import ProjectLib.domain
+import ProjectLib.remote
+import ProjectLib.cardinfo
 
 plugins {
     androidApplication
@@ -57,6 +61,12 @@ android {
 dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
+    implementation(project(cardinfo))
+    implementation(project(core))
+    implementation(project(domain))
+    implementation(project(remote))
+
 
     implementAll(View.components)
     implementation(DI.hiltAndroid)

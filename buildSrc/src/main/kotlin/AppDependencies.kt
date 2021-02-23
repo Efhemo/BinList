@@ -78,7 +78,7 @@ object Dependencies {
             "jp.wasabeef:picasso-transformations:${Version.picassoTransformations}"
         private const val exoplayer = "com.google.android.exoplayer:exoplayer:${Version.exoplayer}"
         override val components: List<String> =
-            listOf(appCompat, fragment, picassoImageLoader, picassoTransformations, exoplayer)
+            listOf(appCompat, fragment, materialComponent)
     }
 
     object Others {
@@ -203,12 +203,12 @@ object Dependencies {
 
 object ProjectLib {
     const val app: String = ":app"
+    const val cardinfo: String = ":cardinfo"
     const val core: String = ":core"
-    const val presentation: String = ":presentation"
     const val domain: String = ":libraries:domain"
+    const val remote: String = ":libraries:remote"
+    const val presentation: String = ":presentation"
     const val data: String = ":libraries:data"
     const val cache: String = ":libraries:cache"
     const val testUtils: String = ":libraries:testUtils"
-    const val dashboard: String = ":dashboard"
-    const val remote: String = ":libraries:remote"
 }
