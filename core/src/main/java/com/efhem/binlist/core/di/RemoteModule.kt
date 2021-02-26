@@ -1,6 +1,6 @@
 package com.efhem.binlist.core.di
 
-import androidx.viewbinding.BuildConfig
+import com.efhem.binlist.core.BuildConfig
 import com.efhem.binlist.domain.repository.CardInfoRepository
 import com.efhem.binlist.remote.ApiService
 import com.efhem.binlist.remote.ApiServiceFactory
