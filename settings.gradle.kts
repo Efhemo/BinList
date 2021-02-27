@@ -4,5 +4,6 @@ include (
     ":libraries:remote",
     ":libraries:domain",
     ":core",
-    ":cardinfo"
+    ":cardinfo",
+    ":libraries:testUtils"
 )

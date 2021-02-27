@@ -1,6 +1,7 @@
 import Dependencies.Network
 import Dependencies.Test
 import ProjectLib.domain
+import ProjectLib.testUtils
 
 plugins {
     kotlinLibrary
@@ -9,6 +10,7 @@ plugins {
 
 dependencies {
 
+    implementation(project(testUtils))
     implementation(project(domain))
     implementAll(Network.components)
 
