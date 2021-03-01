@@ -1,6 +1,6 @@
 package com.efhem.binlist.cache
 
-import com.efhem.binlist.cache.entity.CardInfoCache
+import com.efhem.binlist.cache.model.CardInfoCacheModel
 import com.efhem.binlist.data.model.CardInfoEntity
 
 internal object DummyData {
@@ -26,7 +26,7 @@ internal object DummyData {
         "debit"
     )
 
-    val CardInfoModel = CardInfoCache(
+    val CardInfoModel = CardInfoCacheModel(
         4122414,
         "Hjørring",
         "Jyske Bank",

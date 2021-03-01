@@ -5,10 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.efhem.binlist.cache.BuildConfig
-import com.efhem.binlist.cache.entity.CardInfoCache
+import com.efhem.binlist.cache.model.CardInfoCacheModel
 
 @Database(
-    entities = [CardInfoCache::class],
+    entities = [CardInfoCacheModel::class],
     version = BuildConfig.databaseVersion,
     exportSchema = false
 )

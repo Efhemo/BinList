@@ -1,10 +1,10 @@
-package com.efhem.binlist.cache.entity
+package com.efhem.binlist.cache.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "CARD_INFO")
-class CardInfoCache (
+class CardInfoCacheModel (
     @PrimaryKey
     val cardNumber: Long,
     val city: String?,
