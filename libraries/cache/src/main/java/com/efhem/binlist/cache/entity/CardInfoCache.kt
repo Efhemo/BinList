@@ -1,4 +1,4 @@
-package com.efhem.cache.entity
+package com.efhem.binlist.cache.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

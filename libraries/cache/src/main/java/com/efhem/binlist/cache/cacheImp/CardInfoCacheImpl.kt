@@ -1,9 +1,9 @@
-package com.efhem.cache.cacheImp
+package com.efhem.binlist.cache.cacheImp
 
-import com.efhem.cache.mappers.CardInfoCacheMapper
-import com.efhem.cache.room.CardInfoDao
-import com.efhem.data.contract.cache.CardInfoRepository
-import com.efhem.data.model.CardInfoEntity
+import com.efhem.binlist.cache.mappers.CardInfoCacheMapper
+import com.efhem.binlist.cache.room.CardInfoDao
+import com.efhem.binlist.data.contract.cache.CardInfoCacheRepository
+import com.efhem.binlist.data.model.CardInfoEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
@@ -11,7 +11,7 @@ import javax.inject.Inject
 class CardInfoCacheImpl @Inject constructor (
     private val cardInfoDao: CardInfoDao,
     private val cardInfoCacheMapper: CardInfoCacheMapper
-): CardInfoRepository {
+): CardInfoCacheRepository {
 
     override suspend fun saveCardInfo(cardInfoEntity: CardInfoEntity) {
         cardInfoDao.insertCardInfo(cardInfoCacheMapper.mapToModel(cardInfoEntity))

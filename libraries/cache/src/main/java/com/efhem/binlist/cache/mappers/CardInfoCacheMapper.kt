@@ -1,8 +1,8 @@
-package com.efhem.cache.mappers
+package com.efhem.binlist.cache.mappers
 
-import com.efhem.cache.entity.CardInfoCache
-import com.efhem.cache.mappers.base.CacheModelMapper
-import com.efhem.data.model.CardInfoEntity
+import com.efhem.binlist.cache.entity.CardInfoCache
+import com.efhem.binlist.cache.mappers.base.CacheModelMapper
+import com.efhem.binlist.data.model.CardInfoEntity
 import javax.inject.Inject
 
 class CardInfoCacheMapper @Inject constructor(): CacheModelMapper<CardInfoCache, CardInfoEntity> {

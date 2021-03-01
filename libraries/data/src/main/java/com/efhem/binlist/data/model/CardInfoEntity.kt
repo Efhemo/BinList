@@ -1,6 +1,6 @@
-package com.efhem.data.model
+package com.efhem.binlist.data.model
 
-class CardInfoEntity (
+data class CardInfoEntity (
     val cardNumber: Long,
     val city: String?,
     val bankName: String?,

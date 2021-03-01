@@ -7,14 +7,14 @@ import com.efhem.binlist.remote.model.NumberRemoteModel
 
 internal object DummyData {
 
-    val bank = BankRemoteModel(
+    private val bank = BankRemoteModel(
         "Hjørring",
         "Jyske Bank",
         "+4589893300",
         "www.jyskebank.dk"
     )
 
-    val country = CountryRemoteModel(
+    private val country = CountryRemoteModel(
         "DK",
         "DKK",
         "🇩🇰",
@@ -24,7 +24,7 @@ internal object DummyData {
         "208"
     )
 
-    val number = NumberRemoteModel(
+    private val number = NumberRemoteModel(
         16, true
     )
 

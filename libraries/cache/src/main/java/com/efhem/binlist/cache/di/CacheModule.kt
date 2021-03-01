@@ -1,9 +1,8 @@
-package com.efhem.cache.di
+package com.efhem.binlist.cache.di
 
 import android.content.Context
-import com.efhem.cache.room.BinListDatabase
-import com.efhem.cache.room.CardInfoDao
-import dagger.Binds
+import com.efhem.binlist.cache.room.BinListDatabase
+import com.efhem.binlist.cache.room.CardInfoDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

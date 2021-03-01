@@ -1,9 +1,9 @@
-package com.efhem.data.contract.cache
+package com.efhem.binlist.data.contract.cache
 
-import com.efhem.data.model.CardInfoEntity
+import com.efhem.binlist.data.model.CardInfoEntity
 import kotlinx.coroutines.flow.Flow
 
-interface CardInfoRepository {
+interface CardInfoCacheRepository {
 
     suspend fun saveCardInfo(cardInfoEntity: CardInfoEntity)
 

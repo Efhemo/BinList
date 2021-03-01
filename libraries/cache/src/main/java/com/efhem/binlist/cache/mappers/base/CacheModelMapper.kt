@@ -1,4 +1,4 @@
-package com.efhem.cache.mappers.base
+package com.efhem.binlist.cache.mappers.base
 
 interface CacheModelMapper<M, E> {
 

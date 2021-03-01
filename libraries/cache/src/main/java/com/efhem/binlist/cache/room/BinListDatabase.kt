@@ -1,11 +1,11 @@
-package com.efhem.cache.room
+package com.efhem.binlist.cache.room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.efhem.cache.BuildConfig
-import com.efhem.cache.entity.CardInfoCache
+import com.efhem.binlist.cache.BuildConfig
+import com.efhem.binlist.cache.entity.CardInfoCache
 
 @Database(
     entities = [CardInfoCache::class],
