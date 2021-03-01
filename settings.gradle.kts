@@ -1,9 +1,11 @@
 rootProject.name = "BinList"
 include (
     ":app",
-    ":libraries:remote",
-    ":libraries:domain",
     ":core",
     ":cardinfo",
+    ":libraries:domain",
+    ":libraries:data",
+    ":libraries:cache",
+    ":libraries:remote",
     ":libraries:testUtils"
 )

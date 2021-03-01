@@ -6,6 +6,7 @@
       <module name="BinList.buildSrc" target="14" />
       <module name="BinList.cardinfo" target="14" />
       <module name="BinList.core" target="14" />
+      <module name="BinList.libraries.cache" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

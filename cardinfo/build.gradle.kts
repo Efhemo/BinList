@@ -10,7 +10,7 @@ import ProjectLib.domain
 plugins {
     androidLibrary
     kotlin(kotlinAndroid)
-    kotlin(kotlinAndroidExtension)
+    //kotlin(kotlinAndroidExtension)
     kotlin(kotlinKapt)
     daggerHilt
 }
