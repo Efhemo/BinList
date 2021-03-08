@@ -16,8 +16,11 @@
             <option value="$PROJECT_DIR$/cardinfo" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/cache" />
+            <option value="$PROJECT_DIR$/libraries/data" />
             <option value="$PROJECT_DIR$/libraries/domain" />
             <option value="$PROJECT_DIR$/libraries/remote" />
+            <option value="$PROJECT_DIR$/libraries/testUtils" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

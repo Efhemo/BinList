@@ -24,7 +24,7 @@ object ApiServiceFactory {
     private fun makeApiService(okHttpClient: OkHttpClient, moshi: Moshi): ApiService {
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
-            .client(httpClient())
+            .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         return retrofit.create(ApiService::class.java)
@@ -48,18 +48,6 @@ object ApiServiceFactory {
             HttpLoggingInterceptor.Level.NONE
         }
         return logging
-    }
-
-    private fun httpClient(): OkHttpClient {
-        val httpLoggingInterceptor = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger.DEFAULT)
-        val clientBuilder = OkHttpClient.Builder()
-
-        httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-        clientBuilder.addInterceptor(httpLoggingInterceptor)
-
-        clientBuilder.readTimeout(120, TimeUnit.SECONDS)
-        clientBuilder.writeTimeout(120, TimeUnit.SECONDS)
-        return clientBuilder.build()
     }
 
 
